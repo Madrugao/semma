@@ -30,7 +30,7 @@
                 </ul>
                 
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar usuário" aria-label="Buscar">
                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
             </div>
@@ -51,41 +51,37 @@
                 <div class="list-group-item">
                     <div class="d-flex">
                         <div class="mr-auto p-2">
-                            <h2 class="display-4 titulo">Denúncias</h2>
+                            <h2 class="display-4 titulo">Cadastrados</h2>
                         </div>
+                        <a href="usuarios.html">
+                            <div class="p-2">
+                                <button type="button" class="btn btn-outline-success">Cadastrar</button>
+                            </div>
+                        </a>
                     </div>                
                     <div class="table-responsive">
                         <table class="table table-hover table-striped table-bordered">
                             <thead>
                                 <tr>
-                                    <th class="text-center d-none d-lg-table-cell text-center">PROTOCOLO</th>
-                                    <th class="text-center">DENUNCIA</th>
-                                    <th class="d-none d-lg-table-cell text-center">HORA</th>
-                                    <th class="d-none d-lg-table-cell text-center">DATA</th>
-                                    <th class="text-center">STATUS</th>
-                                    <th class="text-center">CHAMADO</th>
+                                    <th class="text-center d-none d-lg-table-cell text-center">ID</th>
+                                    <th class="text-center">Nome</th>
+                                    <th class="d-none d-lg-table-cell text-center">Email</th>
+                                    <th class="d-none d-lg-table-cell text-center">Usuario</th>
+                                    <th class="d-none d-lg-table-cell text-center">Senha</th>
+                                    <th class="text-center">Opções</th>
 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th class="text-center d-none d-lg-table-cell text-center">1</th>
-                                    <td class="text-center">POL. SONORA</td>
-                                    <td class="d-none d-lg-table-cell text-center">30/08/2019</td>
-                                    <td class="d-none d-lg-table-cell text-center">20:15</td>
-                                    <td class="text-center text-success letra_col">Atendido</td>
+                                    <td class="text-center">Josivaldo</td>
+                                    <td class="d-none d-lg-table-cell text-center">Josivaldo@brasil</td>
+                                    <td class="d-none d-lg-table-cell text-center">Joss</td>
+                                    <td class="d-none d-lg-table-cell text-center">12345678</td>
                                     <th class="text-center">
-                                        <button type="button" class="btn btn-outline-primary btn-sm">Visualizar</button>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="text-center d-none d-lg-table-cell text-center">2</th>
-                                    <td class="text-center">DESMATAMENTO</td>
-                                    <td class="d-none d-lg-table-cell text-center">30/08/2019</td>
-                                    <td class="d-none d-lg-table-cell text-center">20:15</td>
-                                    <td class="text-center text-danger letra_col">Pendente</td>
-                                    <th class="text-center">
-                                        <button type="button" class="btn btn-outline-primary btn-sm">Visualizar</button>
+                                        <button type="button" class="btn btn-outline-warning btn-sm">Editar</button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">Apagar</button>
                                     </th>
                                 </tr>
                             </tbody>

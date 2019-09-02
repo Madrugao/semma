@@ -43,7 +43,7 @@
                     <li><a href="index.html"><i class="fas fa-exclamation-triangle"></i> Denúncias</a></li>
                     <li><a href="categorias.html"><i class="fas fa-clipboard-list"></i> Categorias</a></li>
                     <li><a href="cadastrados.html"><i class="fas fa-users"></i> Usuários</a></li>
-                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
                 </ul>
             </nav>
 
@@ -58,7 +58,13 @@
                                 <button type="button" class="btn btn-outline-success">Cadastrar</button>
                             </div>
                         </a>
-                    </div>                
+                    </div>  
+                    <div class="alert alert-success" role="alert">
+                        Usuário excluído com sucesso!
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>                          
+                    </div>              
                     <div class="table-responsive">
                         <table class="table table-hover table-striped table-bordered">
                             <thead>
@@ -80,12 +86,33 @@
                                     <td class="d-none d-lg-table-cell text-center">Joss</td>
                                     <td class="d-none d-lg-table-cell text-center">12345678</td>
                                     <th class="text-center">
-                                        <button type="button" class="btn btn-outline-warning btn-sm">Editar</button>
-                                        <button type="button" class="btn btn-outline-danger btn-sm">Apagar</button>
+                                        <button type="button" class="btn btn-outline-warning btn-sm ">Editar</button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#apagarRegistro">Apagar</button>
                                     </th>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Exclusao-->
+        <div class="modal fade" id="apagarRegistro" tabindex="-1" role="dialog" aria-labelledby="apagarRegistroLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white">
+                        <h5 class="modal-title" id="exampleModalLabel">EXCLUIR USUÁRIO</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Tem certeza que deseja excluir o usuário selecionado?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger">Apagar</button>
                     </div>
                 </div>
             </div>

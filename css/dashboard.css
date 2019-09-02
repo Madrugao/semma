@@ -1,6 +1,5 @@
 body {
   background-color: rgba(0, 0, 0, 0.105);
-  /* #9aff9a */
 }
 
 .denuncia{
@@ -33,16 +32,6 @@ body {
 
 .sidebar-toggle:hover{
   cursor: pointer;
-}
-
-/*ocultando o menu esquerdo*/
- @media (max-width: 768px){
-  .sidebar{
-    margin-left: -250px;
-  }
-  .sidebar.toggled{
-    margin-left: 0px;
-  }
 }  
 
 .content{
@@ -61,3 +50,15 @@ body {
 .letra_col{
   font-weight: bold;
 }
+
+/*ocultando o menu esquerdo*/
+@media (max-width: 768px){
+  .sidebar{
+    margin-left: -250px;
+  }
+  .sidebar.toggled{
+    margin-left: 0px;
+  }
+}
+
+
